@@ -90,6 +90,37 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+}
+
+.btnContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.openModal {
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.form_modal {
+    display: none;
+}
+
+.btn {
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.closeBtn {
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.form_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
 }

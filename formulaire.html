@@ -29,7 +29,27 @@
             <img class="burger" src="../images/burger_icon.png" width="35" height="35" alt="Burger icon">
         </header>
 
+        <div class="btnContent">
+            <button class="openModal" onclick="openForm()">Contact us</button>
+        </div>
+        <div class="form_modal" id="Form">
+            <form action="" class="form_content">
+                <h1>Form contact</h1>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="closeBtn" onclick="closeForm()">Close</button>
+            </form>
+        </div>
     </div>
+
+    <script src="../formModal.js">
+    </script>
 </body>
 
 </html>
