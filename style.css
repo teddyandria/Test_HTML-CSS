@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --primary: #8bb4ab;
+    --intermediate: #c5d5d1;
+    --secondary: #e1e5e4;
+    --secondary_intermediate: #e7e9e8;
+    --air-text-color: #51cbc3;
+    --color-content: #f4f8f7;
+    --card-color: #f9fbfb;
+    --font: 'Lato', sans-serif;
+    --font-content: 'Anton', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, var(--primary), var(--intermediate));
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_head {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.navbar {
+    margin-top: 2rem;
+    display: block;
+}
+
+.top_head .burger {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    list-style: none;
+}
+
+.navbar ul li>a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.layer {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.navbar ul li.active a {
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 0.9rem;
+}
+
+.jordan_logo {
+    margin-top: 1rem;
+}
+
+.nike_logo {
+    margin-top: 5rem;
+    margin-left: 10rem;
+    width: 650px;
+    height: 250px;
+}
+
+.body_content {
+    background: linear-gradient(to right, var(--secondary), var(--secondary_intermediate));
+    height: 600px;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoes {
+    height: clamp(250px, 45%, 350px);
+    width: clamp(350px, 55%, 470px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product_show {
+    align-self: self;
+}
+
+.side_bar {
+    transform: rotate(-0.25turn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_bar>a {
+    font-family: var(--font);
+    color: var(--font-color);
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 0.7rem;
+}
+
+.nike_model {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 17rem;
+    line-height: normal;
+}
+
+.nike {
+    font-family: var(--font-content);
+    color: var(--color-content);
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.air {
+    font-family: var(--font-content);
+    color: var(--air-text-color);
+    font-size: 1.5rem;
+}
+
+.second_text:not(span) {
+    font-size: 1.5rem;
+}
+
+.carousel_show {
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel_product {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 2rem;
+}
+
+.carousel_product>img {
+    text-align: center;
+    align-self: center;
+}
+
+.model {
+    display: flex;
+    padding-right: 4rem;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.model>img {
+    border-right: 1px solid black;
+}
+
+.info_product {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.name {
+    font-size: 0.7rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+}
+
+.mobile-menu {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .nike_logo {
+        margin-top: 5rem;
+        margin-left: 10rem;
+        width: 500px;
+        height: 200px;
+    }
+
+    .nike_model {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .body_content .nike_logo {
+        margin-left: 5rem;
+        width: 550px;
+        height: 250px;
+    }
+
+    .nike_model {
+        margin-left: 10rem;
+
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .body_content {
+        border-radius: 0;
+        overflow-x: hidden;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .body_content .nike_logo {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, var(--primary), var(--intermediate));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .navbar.mobile-menu {
+        margin-left: 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 0;
+    }
+
+    .top_head {
+        z-index: 6;
+    }
+
+    .top_head .burger {
+        display: block;
+    }
+
+    .top_head .layer {
+        display: none;
+    }
+
+    .top_head .jordan_logo {
+        position: absolute;
+        float: left;
+        top: 0;
+        left: 15px;
+        z-index: 6;
+    }
+
+    .navbar ul li {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar ul li a:hover {
+        color: var(--card-color);
+        font-size: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .nike_model {
+        margin-left: 2rem;
+    }
+
+    .side_bar {
+        position: absolute;
+        right: 70px;
+        bottom: 5px;
+        transform: rotate(0);
+    }
+
+    .carousel_product {
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .shoes {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

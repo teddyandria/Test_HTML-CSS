@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test_TheKub</title>
+</head>
+
+<body>
+    <div class="body_content">
+        <header class="top_head">
+            <a class="jordan_logo" href="../index.html"><img src="../images/logo_jordan.png" width="45" height="45"
+                    alt="Logo"></a>
+            <nav class="navbar ">
+                <ul>
+                    <li><a class="nav_link" href="">Man</a></li>
+                    <li><a class="nav_link" href="">Woman</a></li>
+                    <li><a class="nav_link" href="">Kids</a></li>
+                    <li><a class="nav_link" href="">Custmise</a></li>
+                    <li><a class="nav_link" href="">Sales</a></li>
+                    <li><a class="nav_link" href="">SNKRS</a></li>
+                    <li><a class="nav_link" href="../formulaire.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img class="layer" src="../images/layer.png" width="18" height="18" alt="Layer">
+            <img class="burger" src="../images/burger_icon.png" width="35" height="35" alt="Burger icon">
+        </header>
+        <img class="shoes" src="../images/turbo_green.png" alt="Jordan 1 Retro High Turbo Green">
+        <div class="content">
+            <div></div>
+            <div class="product_show">
+                <div class="nike_model">
+                    <div class="nike">
+                        NIKE
+                    </div>
+                    <div class="second_text"><span class="air">AIR</span> JORDAN</div>
+                </div>
+                <img class="nike_logo" src="../images/Nike-logo-PNG.png" alt="Swhoosh">
+            </div>
+            <div class="side_bar">
+                <a href="">TWITTER</a>
+                <a href="">FACEBOOK</a>
+                <a href="">INSTAGRAM</a>
+            </div>
+        </div>
+        <div class="carousel_show">
+
+            <div class="carousel_product">
+                <img class="arrow" src="../images/left_arrow.png" width="18" height="18" alt="">
+                <div class="model">
+                    <img src="../images/model1.png" height="80" width="140" alt="">
+                    <div class="info_product">
+                        <p class="name">NIKE AIR 031-Off Red</p>
+                        <p class="price">$110.00</p>
+                    </div>
+
+                </div>
+                <div class="model">
+                    <img src="../images/model2.png" height="80" width="140" alt="">
+                    <div class="info_product">
+                        <p class="name">NIKE AIR 032-Off White</p>
+                        <p class="price">$110.00</p>
+                    </div>
+
+                </div>
+                <img class="arrow" src="../images/arrow_right.png" width="18" height="18" alt="">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script>
+    const burger = document.querySelector(".burger")
+    const navbar = document.querySelector(".navbar")
+
+    burger.addEventListener('click', () => (navbar.classList.toggle('mobile-menu')))
+</script>
+
+</html>
